@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Virtual Builder Logo -->
+  <defs>
+    <linearGradient id="builder-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009688;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L20,0 L20,20 L0,20 Z" fill="none" stroke="#37474f" stroke-width="0.5" />
+    </pattern>
+  </defs>
+  
+  <!-- Background with Grid -->
+  <rect width="300" height="300" fill="#263238" />
+  <rect width="300" height="300" fill="url(#grid-pattern)" />
+  
+  <!-- 3D Platform Base -->
+  <polygon points="100,170 200,170 180,190 80,190" fill="#37474f" stroke="#546e7a" stroke-width="1" />
+  
+  <!-- 3D Blocks -->
+  <g>
+    <!-- Central Tower -->
+    <polygon points="130,110 170,110 170,170 130,170" fill="#00838f" stroke="#00bcd4" stroke-width="1" />
+    <polygon points="170,110 190,130 190,190 170,170" fill="#006064" stroke="#00bcd4" stroke-width="1" />
+    <polygon points="130,110 110,130 110,190 130,170" fill="#00acc1" stroke="#00bcd4" stroke-width="1" />
+    <polygon points="130,110 170,110 190,130 150,130" fill="#00bcd4" stroke="#26c6da" stroke-width="1" />
+    
+    <!-- Side Blocks -->
+    <polygon points="110,150 130,150 130,170 110,170" fill="#00acc1" stroke="#00bcd4" stroke-width="1" />
+    <polygon points="170,150 190,150 190,170 170,170" fill="#006064" stroke="#00bcd4" stroke-width="1" />
+    
+    <!-- Platform Extensions -->
+    <polygon points="90,170 110,170 110,190 90,190" fill="#455a64" stroke="#546e7a" stroke-width="1" />
+    <polygon points="190,170 210,170 210,190 190,190" fill="#455a64" stroke="#546e7a" stroke-width="1" />
+  </g>
+  
+  <!-- Construction Elements -->
+  <line x1="150" y1="70" x2="150" y2="110" stroke="url(#builder-grad)" stroke-width="2" />
+  <circle cx="150" cy="70" r="5" fill="#00bcd4" />
+  
+  <!-- Blueprint Grid Lines -->
+  <g stroke="#009688" stroke-width="0.5" stroke-dasharray="2,2">
+    <line x1="70" y1="130" x2="230" y2="130" />
+    <line x1="70" y1="150" x2="230" y2="150" />
+    <line x1="110" y1="90" x2="110" y2="190" />
+    <line x1="130" y1="90" x2="130" y2="190" />
+    <line x1="150" y1="90" x2="150" y2="190" />
+    <line x1="170" y1="90" x2="170" y2="190" />
+    <line x1="190" y1="90" x2="190" y2="190" />
+  </g>
+  
+  <!-- K Builder Symbol -->
+  <path d="M140,130 L140,150 M140,140 L150,130 M140,140 L150,150" 
+        stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Virtual Reality Elements -->
+  <rect x="120" y="210" width="60" height="20" rx="5" fill="#37474f" stroke="#00bcd4" stroke-width="1.5" />
+  <line x1="140" y1="210" x2="140" y2="230" stroke="#00bcd4" stroke-width="1" />
+  <line x1="160" y1="210" x2="160" y2="230" stroke="#00bcd4" stroke-width="1" />
+  
+  <!-- Code Building Blocks -->
+  <g stroke="#00bcd4" stroke-width="1" fill="#37474f">
+    <rect x="80" y="90" width="20" height="10" rx="2" />
+    <rect x="200" y="90" width="20" height="10" rx="2" />
+    <rect x="80" y="110" width="20" height="10" rx="2" />
+    <rect x="200" y="110" width="20" height="10" rx="2" />
+  </g>
+  
+  <!-- Text -->
+  <text x="150" y="250" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">KnarliX</text>
+  <text x="150" y="270" font-family="'Segoe UI', sans-serif" font-size="12" fill="#00bcd4" text-anchor="middle">Virtual Builder</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Dev Level Up Logo -->
+  <defs>
+    <linearGradient id="levelup-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#76ff03;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64dd17;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Dark Background -->
+  <rect width="300" height="300" fill="#1a1a1a" />
+  
+  <!-- Shield Outline -->
+  <path d="M150,50 L230,80 L230,160 C230,190 200,230 150,250 C100,230 70,190 70,160 L70,80 Z" 
+        fill="#212121" stroke="#424242" stroke-width="3" />
+  
+  <!-- Level Bars -->
+  <rect x="90" y="190" width="120" height="15" rx="2" fill="#303030" />
+  <rect x="90" y="190" width="120" height="15" rx="2" fill="url(#levelup-grad)" opacity="0.8" />
+  
+  <rect x="90" y="165" width="120" height="15" rx="2" fill="#303030" />
+  <rect x="90" y="165" width="90" height="15" rx="2" fill="#ffd600" opacity="0.8" />
+  
+  <rect x="90" y="140" width="120" height="15" rx="2" fill="#303030" />
+  <rect x="90" y="140" width="60" height="15" rx="2" fill="#ff6d00" opacity="0.8" />
+  
+  <!-- Level Up Arrow -->
+  <path d="M150,80 L175,110 L160,110 L160,130 L140,130 L140,110 L125,110 Z" 
+        fill="url(#levelup-grad)" filter="url(#glow-green)" />
+  
+  <!-- Code Elements -->
+  <g fill="none" stroke="#76ff03" stroke-width="2" stroke-linecap="round" stroke-dasharray="5,3">
+    <path d="M100,100 L120,100" />
+    <path d="M180,100 L200,100" />
+    <path d="M90,120 L110,120" />
+    <path d="M190,120 L210,120" />
+  </g>
+  
+  <!-- K Symbol -->
+  <path d="M130,90 L130,120 M130,105 L145,90 M130,105 L145,120" 
+        stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Gaming Icons -->
+  <circle cx="110" cy="200" r="5" fill="#ffffff" />
+  <circle cx="125" cy="200" r="5" fill="#ffffff" />
+  <path d="M180,200 L195,195 L195,205 Z" fill="#ffffff" />
+  
+  <!-- Text -->
+  <text x="150" y="230" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">KnarliX</text>
+  <text x="150" y="250" font-family="'Segoe UI', sans-serif" font-size="12" fill="#76ff03" text-anchor="middle">LEVEL MAX</text>
+</svg>

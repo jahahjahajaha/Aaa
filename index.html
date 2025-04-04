@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnarliX Logo Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>KnarliX Logo Collection</h1>
+        <p>A collection of 25 unique logo designs for KnarliX, gamer and developer</p>
+    </header>
+
+    <div class="controls">
+        <button id="previous">Previous</button>
+        <span id="counter">1/25</span>
+        <button id="next">Next</button>
+        <div class="view-controls">
+            <button id="grid-view">Grid View</button>
+            <button id="single-view" class="active">Single View</button>
+        </div>
+    </div>
+
+    <main>
+        <div id="single-logo-view" class="active-view">
+            <div class="logo-container">
+                <div class="logo-display">
+                    <object id="current-logo" data="logos/logo1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="logo-info">
+                    <h2 id="logo-title">Logo 1: Tech Gamer</h2>
+                    <p id="logo-description">A modern, tech-inspired logo combining gaming elements with programming symbols.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="grid-logo-view">
+            <div class="logo-grid">
+                <!-- Logos will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created for KnarliX - Gamer & Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

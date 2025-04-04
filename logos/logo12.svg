@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Polygon Programmer Logo -->
+  <defs>
+    <linearGradient id="poly-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#651fff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c4dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b388ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with Grid -->
+  <rect width="300" height="300" fill="#121212" />
+  
+  <!-- Grid Pattern -->
+  <g stroke="#1e1e1e" stroke-width="0.5">
+    <line x1="0" y1="50" x2="300" y2="50" />
+    <line x1="0" y1="100" x2="300" y2="100" />
+    <line x1="0" y1="150" x2="300" y2="150" />
+    <line x1="0" y1="200" x2="300" y2="200" />
+    <line x1="0" y1="250" x2="300" y2="250" />
+    <line x1="50" y1="0" x2="50" y2="300" />
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="250" y1="0" x2="250" y2="300" />
+  </g>
+  
+  <!-- Low Poly Avatar Base -->
+  <polygon points="150,80 190,100 190,180 150,200 110,180 110,100" 
+           fill="#212121" stroke="url(#poly-grad)" stroke-width="2" />
+  
+  <!-- Low Poly Face Elements -->
+  <polygon points="150,120 170,130 150,140 130,130" fill="#651fff" opacity="0.7" />
+  <polygon points="140,150 160,150 165,170 135,170" fill="#7c4dff" opacity="0.7" />
+  
+  <!-- K Low Poly Style -->
+  <polygon points="130,110 135,110 135,130 130,130" fill="#b388ff" />
+  <polygon points="135,120 145,110 150,115 140,125" fill="#b388ff" />
+  <polygon points="135,120 145,130 150,125 140,115" fill="#b388ff" />
+  
+  <!-- Poly Gaming Controller -->
+  <polygon points="200,140 220,140 220,160 200,160" fill="none" stroke="#651fff" stroke-width="2" />
+  <polygon points="205,145 215,145 215,155 205,155" fill="#651fff" opacity="0.5" />
+  
+  <!-- Poly Code Element -->
+  <polygon points="80,140 100,140 100,160 80,160" fill="none" stroke="#651fff" stroke-width="2" />
+  <polygon points="85,145 95,145 95,155 85,155" fill="#651fff" opacity="0.5" />
+  
+  <!-- Connecting Lines -->
+  <g stroke="#651fff" stroke-width="1" stroke-dasharray="2,2">
+    <line x1="100" y1="150" x2="110" y2="150" />
+    <line x1="190" y1="150" x2="200" y2="150" />
+  </g>
+  
+  <!-- Low Poly Background Elements -->
+  <polygon points="50,50 70,30 90,50" fill="#651fff" opacity="0.2" />
+  <polygon points="210,50 230,30 250,50" fill="#651fff" opacity="0.2" />
+  <polygon points="50,250 70,270 90,250" fill="#651fff" opacity="0.2" />
+  <polygon points="210,250 230,270 250,250" fill="#651fff" opacity="0.2" />
+  
+  <!-- Text -->
+  <text x="150" y="240" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">KnarliX</text>
+</svg>

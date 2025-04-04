@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Circuit Gamer Logo -->
+  <defs>
+    <linearGradient id="circuit-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b8d4;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dark Background -->
+  <rect width="300" height="300" fill="#121212" />
+  
+  <!-- Circuit Board Pattern -->
+  <g stroke="#00e5ff" stroke-width="1.5" fill="none">
+    <path d="M50,50 L250,50 L250,250 L50,250 Z" />
+    <path d="M50,100 L100,100 L100,150 L150,150 L150,200 L250,200" />
+    <path d="M50,150 L75,150 L75,200 L125,200 L125,250" />
+    <path d="M100,50 L100,75 L200,75 L200,125 L250,125" />
+    <path d="M150,50 L150,100 L200,100 L200,150 L250,150" />
+    <path d="M200,50 L200,60 L225,60 L225,100" />
+    <path d="M50,200 L75,200 L75,225 L200,225 L200,250" />
+  </g>
+  
+  <!-- Circuit Components -->
+  <circle cx="100" cy="100" r="5" fill="#64ffda" />
+  <circle cx="150" cy="150" r="5" fill="#64ffda" />
+  <circle cx="200" cy="100" r="5" fill="#64ffda" />
+  <circle cx="75" cy="200" r="5" fill="#64ffda" />
+  <circle cx="200" cy="225" r="5" fill="#64ffda" />
+  <rect x="95" y="145" width="10" height="10" fill="#64ffda" />
+  <rect x="145" y="195" width="10" height="10" fill="#64ffda" />
+  <rect x="195" y="145" width="10" height="10" fill="#64ffda" />
+  
+  <!-- K Circuit Style -->
+  <path d="M85,100 L115,100 M100,85 L100,115" stroke="#ff4081" stroke-width="5" stroke-linecap="round" />
+  <path d="M100,150 L110,140 L110,160" stroke="#ff4081" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Gaming Controller Outline -->
+  <rect x="125" y="175" width="50" height="30" rx="10" fill="none" stroke="#ff4081" stroke-width="2" />
+  <circle cx="135" cy="190" r="5" fill="none" stroke="#ff4081" stroke-width="2" />
+  <circle cx="165" cy="190" r="5" fill="none" stroke="#ff4081" stroke-width="2" />
+  
+  <!-- Central Circuit Chip -->
+  <rect x="125" y="125" width="50" height="50" fill="none" stroke="url(#circuit-grad)" stroke-width="3" />
+  <line x1="125" y1="135" x2="175" y2="135" stroke="url(#circuit-grad)" stroke-width="2" />
+  <line x1="125" y1="145" x2="175" y2="145" stroke="url(#circuit-grad)" stroke-width="2" />
+  <line x1="125" y1="155" x2="175" y2="155" stroke="url(#circuit-grad)" stroke-width="2" />
+  <line x1="125" y1="165" x2="175" y2="165" stroke="url(#circuit-grad)" stroke-width="2" />
+  
+  <!-- Text -->
+  <text x="150" y="270" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">KnarliX</text>
+</svg>

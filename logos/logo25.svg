@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- KnarliX Prime Logo -->
+  <defs>
+    <linearGradient id="prime-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9c27b0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3f51b5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow-prime" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="tech-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L40,0 L40,40 L0,40 Z" fill="none" stroke="#3f51b5" stroke-width="0.5" opacity="0.3" />
+      <path d="M0,10 L40,10 M0,20 L40,20 M0,30 L40,30 M10,0 L10,40 M20,0 L20,40 M30,0 L30,40" stroke="#3f51b5" stroke-width="0.2" opacity="0.2" />
+    </pattern>
+  </defs>
+  
+  <!-- Technical Background -->
+  <rect width="300" height="300" fill="#0a0a0a" />
+  <rect width="300" height="300" fill="url(#tech-grid)" />
+  
+  <!-- Prime Shield -->
+  <path d="M150,50 L230,90 L230,170 C230,210 190,240 150,260 C110,240 70,210 70,170 L70,90 Z" 
+        fill="#111111" stroke="url(#prime-grad)" stroke-width="4" filter="url(#glow-prime)" />
+  
+  <!-- Central K Prime -->
+  <g transform="translate(150, 150)">
+    <circle cx="0" cy="0" r="40" fill="#111111" stroke="url(#prime-grad)" stroke-width="3" />
+    <path d="M-20,-25 L-20,25 M-20,0 L20,-25 M-20,0 L20,25" 
+          stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  
+  <!-- Game Elements -->
+  <g>
+    <!-- D-Pad -->
+    <g transform="translate(90, 120)">
+      <rect x="-15" y="-15" width="30" height="30" rx="3" fill="#111111" stroke="#9c27b0" stroke-width="1.5" />
+      <path d="M0,-10 L0,10 M-10,0 L10,0" stroke="#9c27b0" stroke-width="2" stroke-linecap="round" />
+    </g>
+    
+    <!-- Action Buttons -->
+    <g transform="translate(210, 120)">
+      <circle cx="-8" cy="-8" r="6" fill="#111111" stroke="#00bcd4" stroke-width="1.5" />
+      <circle cx="8" cy="-8" r="6" fill="#111111" stroke="#3f51b5" stroke-width="1.5" />
+      <circle cx="-8" cy="8" r="6" fill="#111111" stroke="#3f51b5" stroke-width="1.5" />
+      <circle cx="8" cy="8" r="6" fill="#111111" stroke="#00bcd4" stroke-width="1.5" />
+    </g>
+  </g>
+  
+  <!-- Code Elements -->
+  <g>
+    <!-- Code Brackets -->
+    <path d="M90,180 L75,150 L90,120" stroke="#3f51b5" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M210,180 L225,150 L210,120" stroke="#3f51b5" stroke-width="3" fill="none" stroke-linecap="round" />
+    
+    <!-- Code Lines -->
+    <g stroke="#00bcd4" stroke-width="1.5" stroke-linecap="round">
+      <line x1="90" y1="180" x2="130" y2="180" />
+      <line x1="90" y1="165" x2="120" y2="165" />
+      <line x1="90" y1="150" x2="110" y2="150" />
+      <line x1="90" y1="135" x2="120" y2="135" />
+      <line x1="90" y1="120" x2="130" y2="120" />
+      
+      <line x1="210" y1="180" x2="170" y2="180" />
+      <line x1="210" y1="165" x2="180" y2="165" />
+      <line x1="210" y1="150" x2="190" y2="150" />
+      <line x1="210" y1="135" x2="180" y2="135" />
+      <line x1="210" y1="120" x2="170" y2="120" />
+    </g>
+  </g>
+  
+  <!-- Tech Energy Lines -->
+  <g stroke="url(#prime-grad)" stroke-width="1" stroke-dasharray="1,2">
+    <path d="M150,50 L150,110" />
+    <path d="M70,90 L110,110" />
+    <path d="M230,90 L190,110" />
+    <path d="M70,170 L110,190" />
+    <path d="M230,170 L190,190" />
+    <path d="M150,260 L150,190" />
+  </g>
+  
+  <!-- Energy Points -->
+  <g fill="#9c27b0">
+    <circle cx="150" cy="50" r="3" />
+    <circle cx="70" cy="90" r="3" />
+    <circle cx="230" cy="90" r="3" />
+    <circle cx="70" cy="170" r="3" />
+    <circle cx="230" cy="170" r="3" />
+    <circle cx="150" cy="260" r="3" />
+  </g>
+  
+  <!-- Prime Badge -->
+  <g transform="translate(150, 80)">
+    <rect x="-30" y="-10" width="60" height="20" rx="10" fill="#111111" stroke="url(#prime-grad)" stroke-width="1" />
+    <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">PRIME</text>
+  </g>
+  
+  <!-- Text -->
+  <text x="150" y="220" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">KnarliX</text>
+</svg>

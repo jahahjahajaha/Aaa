@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Script Striker Logo -->
+  <defs>
+    <linearGradient id="script-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2185b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f06292;stop-opacity:1" />
+    </linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark Background -->
+  <rect width="300" height="300" fill="#121212" />
+  
+  <!-- Script Lines -->
+  <g stroke="#1e1e1e" stroke-width="1">
+    <line x1="50" y1="80" x2="250" y2="80" />
+    <line x1="50" y1="110" x2="250" y2="110" />
+    <line x1="50" y1="140" x2="250" y2="140" />
+    <line x1="50" y1="170" x2="250" y2="170" />
+    <line x1="50" y1="200" x2="250" y2="200" />
+    <line x1="50" y1="230" x2="250" y2="230" />
+  </g>
+  
+  <!-- K Stylized Script -->
+  <path d="M100,100 C90,120 90,140 100,160 C110,180 100,200 90,200" 
+        stroke="#f06292" stroke-width="8" stroke-linecap="round" fill="none" filter="url(#drop-shadow)" />
+  <path d="M100,130 C120,110 130,100 140,100 M100,130 C130,160 140,180 140,180" 
+        stroke="#f06292" stroke-width="8" stroke-linecap="round" fill="none" filter="url(#drop-shadow)" />
+  
+  <!-- narliX Script -->
+  <path d="M150,130 C155,120 170,120 175,130 C180,140 175,150 170,160 M190,120 C180,140 180,160 190,170 M200,120 L200,170 M210,130 C220,120 230,120 230,130 C230,140 210,160 230,170" 
+        stroke="#c2185b" stroke-width="4" stroke-linecap="round" fill="none" filter="url(#drop-shadow)" />
+  
+  <!-- Script Striker Elements -->
+  <path d="M70,80 L100,50 L130,80" stroke="#f06292" stroke-width="3" fill="none" />
+  <path d="M200,50 L230,80" stroke="#f06292" stroke-width="3" fill="none" />
+  
+  <!-- Coding Cursors -->
+  <rect x="70" y="79" width="2" height="20" fill="#f06292" />
+  <rect x="230" y="79" width="2" height="20" fill="#f06292" />
+  
+  <!-- Game Controller Elements -->
+  <g fill="none" stroke="#f06292" stroke-width="2">
+    <rect x="160" y="210" width="40" height="20" rx="5" />
+    <circle cx="170" cy="220" r="4" />
+    <circle cx="190" cy="220" r="4" />
+  </g>
+  
+  <!-- Dynamic Motion Lines -->
+  <g stroke="#c2185b" stroke-width="1" stroke-dasharray="5,3">
+    <path d="M90,200 C90,220 120,240 140,240" />
+    <path d="M230,170 C250,190 250,220 230,240" />
+  </g>
+  
+  <!-- Text -->
+  <text x="150" y="270" font-family="'Brush Script MT', cursive" font-size="24" fill="url(#script-grad)" text-anchor="middle" filter="url(#drop-shadow)">KnarliX</text>
+</svg>

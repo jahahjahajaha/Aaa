@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Neon Coder Logo -->
+  <defs>
+    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="neon-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neon-grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Black Background -->
+  <rect width="300" height="300" fill="#000000" />
+  
+  <!-- Neon Grid -->
+  <g stroke="#333333" stroke-width="0.5">
+    <line x1="0" y1="50" x2="300" y2="50" />
+    <line x1="0" y1="100" x2="300" y2="100" />
+    <line x1="0" y1="150" x2="300" y2="150" />
+    <line x1="0" y1="200" x2="300" y2="200" />
+    <line x1="0" y1="250" x2="300" y2="250" />
+    <line x1="50" y1="0" x2="50" y2="300" />
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="250" y1="0" x2="250" y2="300" />
+  </g>
+  
+  <!-- Neon Code Brackets -->
+  <path d="M80,80 L60,150 L80,220" stroke="url(#neon-grad1)" stroke-width="5" stroke-linecap="round" fill="none" filter="url(#neon-glow)" />
+  <path d="M220,80 L240,150 L220,220" stroke="url(#neon-grad2)" stroke-width="5" stroke-linecap="round" fill="none" filter="url(#neon-glow)" />
+  
+  <!-- K Neon Style -->
+  <path d="M120,100 L120,200 M120,150 L160,100 M120,150 L160,200" 
+        stroke="#ff00ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#neon-glow)" />
+  
+  <!-- Gaming Controller D-pad -->
+  <g filter="url(#neon-glow)">
+    <rect x="180" y="140" width="20" height="20" fill="none" stroke="#00ffff" stroke-width="3" />
+    <line x1="190" y1="130" x2="190" y2="170" stroke="#00ffff" stroke-width="3" />
+    <line x1="170" y1="150" x2="210" y2="150" stroke="#00ffff" stroke-width="3" />
+  </g>
+  
+  <!-- Abstract Circuitry -->
+  <path d="M60,100 L100,100 M60,200 L100,200 M160,100 L200,100 M160,200 L200,200" 
+        stroke="#333333" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Text with Neon Effect -->
+  <text x="150" y="250" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="bold" fill="none" stroke="#00ffff" stroke-width="1" text-anchor="middle" filter="url(#neon-glow)">KnarliX</text>
+</svg>
