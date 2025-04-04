@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Character-based Gamer PFP 5 - Space Explorer -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Cosmic Background -->
+  <circle cx="250" cy="250" r="240" fill="#090235" />
+  <circle cx="250" cy="250" r="200" fill="#0c0347" />
+  
+  <!-- Character Base -->
+  <g transform="translate(250, 230)">
+    <!-- Astronaut Helmet -->
+    <ellipse cx="0" cy="0" rx="70" ry="80" fill="#1c1a42" stroke="#2a2758" stroke-width="2" />
+    
+    <!-- Helmet Visor -->
+    <ellipse cx="0" cy="-10" rx="50" ry="60" fill="#6f00ff" opacity="0.4" />
+    
+    <!-- Space Suit Collar -->
+    <path d="M-40,70 C-60,85 -70,100 -65,120 L65,120 C70,100 60,85 40,70 Z" 
+          fill="#2a2758" stroke="#3d3a7a" stroke-width="2" />
+    
+    <!-- Shoulder Pads -->
+    <path d="M-80,75 Q-90,90 -85,110 L-65,110 Q-60,95 -40,75 Z" 
+          fill="#1c1a42" stroke="#2a2758" stroke-width="2" />
+    <path d="M80,75 Q90,90 85,110 L65,110 Q60,95 40,75 Z" 
+          fill="#1c1a42" stroke="#2a2758" stroke-width="2" />
+  </g>
+  
+  <!-- Space Features -->
+  <g>
+    <!-- Stars in Visor -->
+    <g fill="#ffffff">
+      <circle cx="230" cy="210" r="1.5" opacity="0.9" />
+      <circle cx="270" cy="210" r="1.5" opacity="0.9" />
+      <circle cx="250" cy="190" r="2" opacity="0.9" />
+      <circle cx="235" cy="230" r="1" opacity="0.9" />
+      <circle cx="265" cy="230" r="1" opacity="0.9" />
+    </g>
+    
+    <!-- Planet Reflection -->
+    <circle cx="250" cy="230" r="25" fill="#5200cc" opacity="0.5" />
+    <circle cx="250" cy="230" r="20" fill="#6a00ff" opacity="0.4" />
+    <path d="M235,215 Q250,205 265,215 Q270,230 265,245 Q250,255 235,245 Q230,230 235,215" 
+          fill="#8c52ff" opacity="0.3" />
+  </g>
+  
+  <!-- Tech Elements -->
+  <g>
+    <!-- Suit Panel Lights -->
+    <rect x="235" y="310" width="30" height="10" rx="3" 
+          fill="#180c66" stroke="#3d3a7a" stroke-width="1" />
+    <circle cx="240" cy="315" r="2" fill="#00ffff" />
+    <circle cx="250" cy="315" r="2" fill="#ff00ff" />
+    <circle cx="260" cy="315" r="2" fill="#00ffff" />
+    
+    <!-- Shoulder Insignia -->
+    <circle cx="190" cy="250" r="10" fill="#180c66" stroke="#3d3a7a" stroke-width="1" />
+    <text x="190" y="254" text-anchor="middle" font-family="Arial" font-size="12" fill="#00ffff">K</text>
+    
+    <circle cx="310" cy="250" r="10" fill="#180c66" stroke="#3d3a7a" stroke-width="1" />
+    <path d="M305,245 L305,255 M305,250 L315,245 M305,250 L315,255" 
+          stroke="#00ffff" stroke-width="1.5" fill="none" />
+  </g>
+  
+  <!-- Space Background Elements -->
+  <g>
+    <!-- Distant Stars -->
+    <g fill="#ffffff">
+      <circle cx="150" cy="150" r="1" opacity="0.8" />
+      <circle cx="350" cy="150" r="1" opacity="0.8" />
+      <circle cx="150" cy="350" r="1" opacity="0.8" />
+      <circle cx="350" cy="350" r="1" opacity="0.8" />
+      <circle cx="100" cy="200" r="1.5" opacity="0.8" />
+      <circle cx="400" cy="200" r="1.5" opacity="0.8" />
+      <circle cx="100" cy="300" r="1.5" opacity="0.8" />
+      <circle cx="400" cy="300" r="1.5" opacity="0.8" />
+      <circle cx="200" cy="100" r="1.5" opacity="0.8" />
+      <circle cx="300" cy="100" r="1.5" opacity="0.8" />
+      <circle cx="200" cy="400" r="1.5" opacity="0.8" />
+      <circle cx="300" cy="400" r="1.5" opacity="0.8" />
+    </g>
+    
+    <!-- Nebula Effects -->
+    <g opacity="0.2">
+      <path d="M80,120 Q150,80 220,120 Q280,160 350,120" 
+            stroke="#ff00ff" stroke-width="30" fill="none" />
+      <path d="M120,380 Q180,420 250,380 Q320,340 380,380" 
+            stroke="#00ffff" stroke-width="30" fill="none" />
+    </g>
+  </g>
+  
+  <!-- Subtle K-shaped Constellation -->
+  <g>
+    <g fill="#ffffff">
+      <circle cx="180" cy="270" r="1.5" />
+      <circle cx="180" cy="300" r="1.5" />
+      <circle cx="180" cy="330" r="1.5" />
+      <circle cx="200" cy="285" r="1.5" />
+      <circle cx="220" cy="270" r="1.5" />
+      <circle cx="200" cy="315" r="1.5" />
+      <circle cx="220" cy="330" r="1.5" />
+    </g>
+    <g stroke="#ffffff" stroke-width="0.5" opacity="0.3">
+      <line x1="180" y1="270" x2="180" y2="330" />
+      <line x1="180" y1="300" x2="220" y2="270" />
+      <line x1="180" y1="300" x2="220" y2="330" />
+    </g>
+  </g>
+</svg>
