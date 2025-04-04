@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Cyberpunk Gamer PFP -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Main Hexagon Shape -->
+  <path d="M250,50 L400,150 L400,350 L250,450 L100,350 L100,150 Z" 
+        fill="#020024" />
+  
+  <!-- Inner Hexagon -->
+  <path d="M250,100 L350,167 L350,333 L250,400 L150,333 L150,167 Z" 
+        fill="#340979" />
+  
+  <!-- Glowing Grid Effect -->
+  <g stroke="#00d4ff" stroke-width="2" opacity="0.6">
+    <line x1="150" y1="167" x2="350" y2="167" />
+    <line x1="150" y1="250" x2="350" y2="250" />
+    <line x1="150" y1="333" x2="350" y2="333" />
+    <line x1="150" y1="167" x2="150" y2="333" />
+    <line x1="250" y1="100" x2="250" y2="400" />
+    <line x1="350" y1="167" x2="350" y2="333" />
+  </g>
+  
+  <!-- K Symbol Futuristic -->
+  <g transform="translate(250, 250)">
+    <path d="M-40,-60 L-40,60 M-40,0 L40,-60 M-40,0 L40,60" 
+          stroke="#00ffcc" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M-40,-60 L-40,60 M-40,0 L40,-60 M-40,0 L40,60" 
+          stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  
+  <!-- Tech Circuit Elements -->
+  <g stroke="#00ffcc" stroke-width="1.5" fill="none">
+    <path d="M100,250 L150,250" />
+    <path d="M350,250 L400,250" />
+    <path d="M250,50 L250,100" />
+    <path d="M250,400 L250,450" />
+    <circle cx="150" cy="250" r="5" fill="#00ffcc" />
+    <circle cx="350" cy="250" r="5" fill="#00ffcc" />
+    <circle cx="250" cy="100" r="5" fill="#00ffcc" />
+    <circle cx="250" cy="400" r="5" fill="#00ffcc" />
+  </g>
+  
+  <!-- Energy Pulses -->
+  <g opacity="0.8">
+    <circle cx="250" cy="250" r="120" fill="none" stroke="#00ffcc" stroke-width="2" />
+    <circle cx="250" cy="250" r="130" fill="none" stroke="#00d4ff" stroke-width="1" />
+    <circle cx="250" cy="250" r="140" fill="none" stroke="#00ffcc" stroke-width="0.5" />
+  </g>
+</svg>

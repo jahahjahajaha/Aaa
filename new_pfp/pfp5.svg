@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Gaming Controller PFP -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Main Circle -->
+  <circle cx="250" cy="250" r="240" fill="#212121" />
+  <circle cx="250" cy="250" r="230" fill="#121212" />
+  
+  <!-- Controller Shape -->
+  <path d="M120,180 Q120,150 150,150 L350,150 Q380,150 380,180 L380,300 Q380,350 330,350 L170,350 Q120,350 120,300 Z" 
+        fill="#2d2d2d" stroke="#424242" stroke-width="5" />
+  
+  <!-- Controller Details -->
+  <g>
+    <!-- Left Joystick -->
+    <circle cx="180" cy="200" r="25" fill="#121212" stroke="#03DAC6" stroke-width="3" />
+    <circle cx="180" cy="200" r="15" fill="#03DAC6" opacity="0.7" />
+    
+    <!-- Right Joystick -->
+    <circle cx="320" cy="200" r="25" fill="#121212" stroke="#03DAC6" stroke-width="3" />
+    <circle cx="320" cy="200" r="15" fill="#03DAC6" opacity="0.7" />
+    
+    <!-- D-Pad -->
+    <g stroke="#BB86FC" stroke-width="4" stroke-linecap="round" fill="none">
+      <line x1="165" y1="280" x2="195" y2="280" />
+      <line x1="180" y1="265" x2="180" y2="295" />
+    </g>
+    <circle cx="180" cy="280" r="25" fill="none" stroke="#BB86FC" stroke-width="2" />
+    
+    <!-- Action Buttons -->
+    <circle cx="320" cy="265" r="10" fill="#FF4081" />
+    <circle cx="320" cy="295" r="10" fill="#03DAC6" />
+    <circle cx="335" cy="280" r="10" fill="#FFC107" />
+    <circle cx="305" cy="280" r="10" fill="#3700B3" />
+    <circle cx="320" cy="280" r="25" fill="none" stroke="#BB86FC" stroke-width="2" />
+    
+    <!-- Center Button -->
+    <rect x="230" y="240" width="40" height="20" rx="5" fill="#121212" stroke="#FFC107" stroke-width="2" />
+  </g>
+  
+  <!-- K Symbol Override -->
+  <g transform="translate(250, 250)">
+    <path d="M-50,-50 L-50,50 M-50,0 L50,-50 M-50,0 L50,50" 
+          stroke="#BB86FC" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9" />
+  </g>
+  
+  <!-- Glow Effects -->
+  <g fill="none" stroke="#BB86FC" opacity="0.3">
+    <circle cx="250" cy="250" r="200" stroke-width="5" />
+    <circle cx="250" cy="250" r="220" stroke-width="3" />
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Minimalist Coder PFP -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Circular Clean Base -->
+  <circle cx="250" cy="250" r="240" fill="#1e1e1e" />
+  <circle cx="250" cy="250" r="220" fill="#121212" />
+  
+  <!-- Code Bracket Decorations -->
+  <g stroke="#e91e63" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M170,150 L130,250 L170,350" />
+    <path d="M330,150 L370,250 L330,350" />
+  </g>
+  
+  <!-- Minimalist K Mark -->
+  <g transform="translate(250, 250)">
+    <path d="M-40,-60 L-40,60 M-40,0 L40,-60 M-40,0 L40,60" 
+          stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  
+  <!-- Code Dots -->
+  <g fill="#e91e63">
+    <circle cx="130" cy="250" r="10" />
+    <circle cx="370" cy="250" r="10" />
+    <circle cx="250" cy="150" r="10" />
+    <circle cx="250" cy="350" r="10" />
+  </g>
+  
+  <!-- Binary Element -->
+  <g fill="#ffffff" opacity="0.3" font-family="monospace" font-size="12">
+    <text x="200" y="160">01001011</text>
+    <text x="180" y="340">01011000</text>
+  </g>
+  
+  <!-- Circuit Board Pattern -->
+  <g stroke="#444444" stroke-width="1" opacity="0.4">
+    <line x1="180" y1="220" x2="220" y2="220" />
+    <line x1="180" y1="280" x2="220" y2="280" />
+    <line x1="280" y1="220" x2="320" y2="220" />
+    <line x1="280" y1="280" x2="320" y2="280" />
+    <line x1="180" y1="220" x2="180" y2="280" />
+    <line x1="320" y1="220" x2="320" y2="280" />
+  </g>
+</svg>
