@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Character-based Gamer PFP - Cyborg Warrior -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Dark Background with Tech Circuit Pattern -->
+  <circle cx="250" cy="250" r="240" fill="#0a0a1e" />
+  
+  <!-- Tech Circuit Pattern -->
+  <g stroke="#3d1a66" stroke-width="1" opacity="0.2">
+    <path d="M50,250 H120 M140,250 H170 M190,250 H230 M270,250 H310 M330,250 H370 M390,250 H450" />
+    <path d="M250,50 V120 M250,140 V170 M250,190 V230 M250,270 V310 M250,330 V370 M250,390 V450" />
+    <circle cx="250" cy="250" r="200" fill="none" />
+    <circle cx="250" cy="250" r="180" fill="none" />
+    <circle cx="250" cy="250" r="160" fill="none" />
+    <path d="M150,150 L200,200 M300,150 L250,200 M150,350 L200,300 M300,350 L250,300" />
+  </g>
+  
+  <!-- Energy Aura -->
+  <circle cx="250" cy="250" r="160" fill="#110c29" opacity="0.7" />
+  
+  <!-- Character Base -->
+  <g>
+    <!-- Cyborg Body Frame -->
+    <path d="M190,240 V350 H310 V240 C310,190 190,190 190,240 Z" fill="#2c1e59" />
+    
+    <!-- Shoulder Armor -->
+    <path d="M190,240 L160,220 L150,280 L175,310 L190,300 Z" fill="#4a3983" />
+    <path d="M310,240 L340,220 L350,280 L325,310 L310,300 Z" fill="#4a3983" />
+    
+    <!-- Chest Plate -->
+    <path d="M210,250 H290 L285,330 H215 Z" fill="#3d2e70" />
+    
+    <!-- Head / Helmet -->
+    <ellipse cx="250" cy="200" rx="60" ry="65" fill="#352863" />
+    
+    <!-- Visor -->
+    <path d="M210,190 Q250,170 290,190 Q280,220 250,228 Q220,220 210,190 Z" fill="#6a30fa" opacity="0.8" />
+    
+    <!-- Tech Details -->
+    <rect x="225" y="280" width="50" height="20" rx="5" fill="#1f1638" />
+    <circle cx="235" cy="290" r="5" fill="#6a30fa" />
+    <circle cx="250" cy="290" r="5" fill="#6a30fa" />
+    <circle cx="265" cy="290" r="5" fill="#6a30fa" />
+  </g>
+  
+  <!-- Energy Weapons -->
+  <g>
+    <!-- Left Arm Cannon -->
+    <path d="M175,310 L150,340 L160,370 L190,350" fill="#4a3983" />
+    <ellipse cx="160" cy="355" rx="15" ry="20" fill="#35246e" />
+    <ellipse cx="160" cy="355" rx="8" ry="12" fill="#6a30fa" opacity="0.8" />
+    
+    <!-- Right Arm Blade -->
+    <path d="M325,310 L350,340 L340,370 L310,350" fill="#4a3983" />
+    <path d="M340,355 L370,335 L375,375 L345,365" fill="#35246e" />
+    <path d="M354,355 L374,345 L376,365 L356,360" fill="#6a30fa" opacity="0.8" />
+  </g>
+  
+  <!-- Glowing Details -->
+  <g fill="#6a30fa" opacity="0.8">
+    <!-- Eyes -->
+    <circle cx="230" cy="195" r="5" />
+    <circle cx="270" cy="195" r="5" />
+    
+    <!-- Body Highlights -->
+    <rect x="232.5" y="250" width="35" height="3" rx="1" />
+    <rect x="232.5" y="260" width="35" height="3" rx="1" />
+    <rect x="232.5" y="270" width="35" height="3" rx="1" />
+    
+    <!-- Energy Flows -->
+    <path d="M235,290 Q220,330 230,350" stroke="#6a30fa" stroke-width="2" fill="none" />
+    <path d="M265,290 Q280,330 270,350" stroke="#6a30fa" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Energy Effects -->
+  <g opacity="0.6">
+    <!-- Helmet Energy -->
+    <ellipse cx="250" cy="180" rx="40" ry="10" fill="#6a30fa" opacity="0.3" />
+    
+    <!-- Weapon Energy -->
+    <circle cx="160" cy="355" r="20" fill="#6a30fa" opacity="0.3" />
+    <path d="M354,355 L374,345 L376,365 L356,360" fill="#6a30fa" opacity="0.3" />
+  </g>
+  
+  <!-- Subtle K Integration -->
+  <g stroke="#6a30fa" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M240,320 V340 M240,330 L255,320 M240,330 L255,340" />
+  </g>
+  
+  <!-- Particle Effects -->
+  <g fill="#6a30fa">
+    <circle cx="200" cy="220" r="1.5" opacity="0.7" />
+    <circle cx="300" cy="220" r="1.5" opacity="0.7" />
+    <circle cx="160" cy="330" r="1" opacity="0.7" />
+    <circle cx="340" cy="330" r="1" opacity="0.7" />
+    <circle cx="220" cy="280" r="1" opacity="0.7" />
+    <circle cx="280" cy="280" r="1" opacity="0.7" />
+    <circle cx="250" cy="250" r="2" opacity="0.5" />
+  </g>
+</svg>

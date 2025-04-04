@@ -59,18 +59,6 @@
         .download-btn:hover {
             background-color: #9c64fc;
         }
-        .title-highlight {
-            color: #ff7efc;
-            font-weight: bold;
-        }
-        .category-title {
-            font-size: 28px;
-            margin-bottom: 15px;
-            background: linear-gradient(45deg, #6a00ff, #bb86fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
     </style>
 </head>
 <body>
@@ -79,12 +67,12 @@
         <p style="text-align: center;">A collection of modern, gaming and developer-themed profile pictures.</p>
         
         <div class="format-section">
-            <h2 class="category-title">SVG Format</h2>
+            <h2>SVG Format ({{ svg_count }})</h2>
             <div class="gallery">
                 {% for i in range(1, svg_count + 1) %}
                 <div class="pfp-card">
                     <img src="/svg/pfp{{ i }}.svg" alt="Profile Picture {{ i }} (SVG)">
-                    <h3>Profile <span class="title-highlight">{{ i }}</span></h3>
+                    <h3>Profile {{ i }}</h3>
                     <p>Vector format with transparent background</p>
                     <a href="/svg/pfp{{ i }}.svg" download class="download-btn">Download SVG</a>
                 </div>
@@ -93,12 +81,12 @@
         </div>
         
         <div class="format-section">
-            <h2 class="category-title">PNG Format</h2>
+            <h2>PNG Format ({{ png_count }})</h2>
             <div class="gallery">
                 {% for i in range(1, png_count + 1) %}
                 <div class="pfp-card">
                     <img src="/png/pfp{{ i }}.png" alt="Profile Picture {{ i }} (PNG)">
-                    <h3>Profile <span class="title-highlight">{{ i }}</span></h3>
+                    <h3>Profile {{ i }}</h3>
                     <p>High-resolution PNG with transparency</p>
                     <a href="/png/pfp{{ i }}.png" download class="download-btn">Download PNG</a>
                 </div>
@@ -108,7 +96,7 @@
         
         {% if has_improved %}
         <div class="format-section">
-            <h2 class="category-title">Improved Profile Picture</h2>
+            <h2>Improved Profile Picture</h2>
             <div class="gallery">
                 <div class="pfp-card" style="grid-column: span 2;">
                     <img src="/improved_pfp.svg" alt="Improved Profile Picture" style="max-width: 500px; margin: 0 auto;">
@@ -121,15 +109,15 @@
         {% endif %}
         
         <div class="format-section">
-            <h2 class="category-title">Character-based Designs</h2>
+            <h2>Character-based Designs</h2>
             <div class="gallery">
                 {% for svg_file in character_designs %}
                 <div class="pfp-card">
-                    <img src="/character/{{ svg_file }}" alt="{{ svg_file.replace('.svg', '') }}">
-                    <h3>{{ svg_file.replace('.svg', '').replace('gamer_char_pfp', 'Character ').replace('_pfp', '').replace('_', ' ').title() }}</h3>
+                    <img src="/character/{{ svg_file }}" alt="{{ svg_file | replace('.svg', '') }}">
+                    <h3>{{ svg_file | replace('.svg', '') | replace('gamer_char_pfp', 'Character ') }}</h3>
                     <p>Character-based design with gaming theme</p>
                     <a href="/character/{{ svg_file }}" download class="download-btn">Download SVG</a>
-                    <a href="/character_png/{{ svg_file.replace('.svg', '.png') }}" download class="download-btn" style="background-color: #03dac6; margin-left: 5px;">PNG</a>
+                    <a href="/character_png/{{ svg_file | replace('.svg', '.png') }}" download class="download-btn" style="background-color: #03dac6; margin-left: 5px;">PNG</a>
                 </div>
                 {% endfor %}
             </div>
