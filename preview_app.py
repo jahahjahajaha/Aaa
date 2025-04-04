@@ -1,17 +1,24 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, send_file
 import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Count SVG files
-    svg_count = len([f for f in os.listdir('new_pfp') if f.endswith('.svg')])
+    # Count SVG files in new_pfp folder
+    svg_count = 0
+    if os.path.exists('new_pfp'):
+        svg_count = len([f for f in os.listdir('new_pfp') if f.endswith('.svg')])
     
-    # Count PNG files
-    png_count = len([f for f in os.listdir('png_pfp') if f.endswith('.png')])
+    # Count PNG files in png_pfp folder
+    png_count = 0
+    if os.path.exists('png_pfp'):
+        png_count = len([f for f in os.listdir('png_pfp') if f.endswith('.png')])
     
-    return render_template('preview.html', svg_count=svg_count, png_count=png_count)
+    # Add the improved PFP
+    has_improved = os.path.exists('improved_pfp.svg')
+    
+    return render_template('preview.html', svg_count=svg_count, png_count=png_count, has_improved=has_improved)
 
 @app.route('/svg/<filename>')
 def serve_svg(filename):
@@ -20,6 +27,10 @@ def serve_svg(filename):
 @app.route('/png/<filename>')
 def serve_png(filename):
     return send_from_directory('png_pfp', filename)
+
+@app.route('/improved_pfp.svg')
+def serve_improved_pfp():
+    return send_file('improved_pfp.svg')
 
 if __name__ == '__main__':
     # Create templates directory if it doesn't exist
@@ -122,6 +133,20 @@ if __name__ == '__main__':
                 {% endfor %}
             </div>
         </div>
+        
+        {% if has_improved %}
+        <div class="format-section">
+            <h2>Improved Profile Picture</h2>
+            <div class="gallery">
+                <div class="pfp-card" style="grid-column: span 2;">
+                    <img src="/improved_pfp.svg" alt="Improved Profile Picture" style="max-width: 500px; margin: 0 auto;">
+                    <h3>Enhanced KnarliX PFP</h3>
+                    <p>Enhanced futuristic design with improved effects and a more vibrant color scheme</p>
+                    <a href="/improved_pfp.svg" download class="download-btn">Download SVG</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>''')

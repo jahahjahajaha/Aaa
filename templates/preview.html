@@ -93,6 +93,20 @@
                 {% endfor %}
             </div>
         </div>
+        
+        {% if has_improved %}
+        <div class="format-section">
+            <h2>Improved Profile Picture</h2>
+            <div class="gallery">
+                <div class="pfp-card" style="grid-column: span 2;">
+                    <img src="/improved_pfp.svg" alt="Improved Profile Picture" style="max-width: 500px; margin: 0 auto;">
+                    <h3>Enhanced KnarliX PFP</h3>
+                    <p>Enhanced futuristic design with improved effects and a more vibrant color scheme</p>
+                    <a href="/improved_pfp.svg" download class="download-btn">Download SVG</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>
