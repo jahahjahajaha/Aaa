@@ -107,6 +107,21 @@
             </div>
         </div>
         {% endif %}
+        
+        <div class="format-section">
+            <h2>Character-based Designs</h2>
+            <div class="gallery">
+                {% for svg_file in character_designs %}
+                <div class="pfp-card">
+                    <img src="/character/{{ svg_file }}" alt="{{ svg_file | replace('.svg', '') }}">
+                    <h3>{{ svg_file | replace('.svg', '') | replace('gamer_char_pfp', 'Character ') }}</h3>
+                    <p>Character-based design with gaming theme</p>
+                    <a href="/character/{{ svg_file }}" download class="download-btn">Download SVG</a>
+                    <a href="/character_png/{{ svg_file | replace('.svg', '.png') }}" download class="download-btn" style="background-color: #03dac6; margin-left: 5px;">PNG</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </body>
 </html>

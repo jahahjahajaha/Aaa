@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Character-based Gamer PFP 1 - Futuristic Samurai -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Backdrop -->
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e" />
+  <circle cx="250" cy="250" r="200" fill="#16213e" />
+  
+  <!-- Character Base -->
+  <g transform="translate(250, 240)">
+    <!-- Helmet Base -->
+    <path d="M-70,-80 C-70,-120 70,-120 70,-80 L90,40 C90,90 -90,90 -90,40 Z" 
+          fill="#4a4a8a" stroke="#7a7acc" stroke-width="2" />
+    
+    <!-- Helmet Visor -->
+    <path d="M-60,-40 C-60,-70 60,-70 60,-40 L75,20 C75,60 -75,60 -75,20 Z" 
+          fill="#6a11cb" stroke="#8844ee" stroke-width="2" />
+    
+    <!-- Chest Armor -->
+    <path d="M-50,60 L-40,140 L40,140 L50,60 Z" 
+          fill="#4a4a8a" stroke="#7a7acc" stroke-width="2" />
+    
+    <!-- Shoulders -->
+    <circle cx="-70" cy="65" r="22" fill="#4a4a8a" stroke="#7a7acc" stroke-width="2" />
+    <circle cx="70" cy="65" r="22" fill="#4a4a8a" stroke="#7a7acc" stroke-width="2" />
+
+    <!-- Glowing Samurai Emblem -->
+    <path d="M-15,15 L-30,40 L0,55 L30,40 L15,15 L0,-10 Z" 
+          fill="#ff3366" stroke="#ff6699" stroke-width="2" />
+  </g>
+  
+  <!-- Glowing Elements -->
+  <g>
+    <!-- Helmet Glow -->
+    <path d="M180,160 L220,160 L240,180 L260,180 L280,160 L320,160 L340,180" 
+          fill="none" stroke="#2de2e6" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Visor Glow Effect -->
+    <ellipse cx="250" cy="200" rx="60" ry="30" fill="#6a11cb" opacity="0.4" />
+    
+    <!-- Energy Lines -->
+    <line x1="180" y1="230" x2="200" y2="230" stroke="#2de2e6" stroke-width="2" stroke-linecap="round" />
+    <line x1="300" y1="230" x2="320" y2="230" stroke="#2de2e6" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Energy Circles -->
+    <circle cx="170" cy="260" r="4" fill="#2de2e6" />
+    <circle cx="330" cy="260" r="4" fill="#2de2e6" />
+  </g>
+  
+  <!-- Katana Handle -->
+  <path d="M330,310 L350,330 L370,320 L380,340" 
+        fill="none" stroke="#ff3366" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Digital Particle Effects -->
+  <g fill="#2de2e6">
+    <circle cx="150" cy="150" r="2" />
+    <circle cx="350" cy="150" r="2" />
+    <circle cx="150" cy="350" r="2" />
+    <circle cx="350" cy="350" r="2" />
+    <circle cx="250" cy="100" r="3" />
+    <circle cx="250" cy="400" r="3" />
+    <circle cx="100" cy="250" r="3" />
+    <circle cx="400" cy="250" r="3" />
+  </g>
+  
+  <!-- Stylized K Character - Hidden in Samurai Design -->
+  <path d="M240,290 L240,340 M240,315 L270,290 M240,315 L270,340" 
+        stroke="#ff3366" stroke-width="3" stroke-linecap="round" fill="none" />
+</svg>

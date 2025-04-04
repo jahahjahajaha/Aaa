@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Character-based Gamer PFP 2 - Mecha Pilot -->
+  
+  <!-- Transparent Background -->
+  <rect width="500" height="500" fill="none" />
+  
+  <!-- Backdrop -->
+  <circle cx="250" cy="250" r="240" fill="#21094e" />
+  <circle cx="250" cy="250" r="200" fill="#310e68" />
+  
+  <!-- Mecha Cockpit -->
+  <g transform="translate(250, 250)">
+    <!-- Cockpit Base -->
+    <path d="M-80,-60 Q-100,20 -60,80 L60,80 Q100,20 80,-60 Q0,-100 -80,-60" 
+          fill="#4b006e" stroke="#7b00cc" stroke-width="3" />
+    
+    <!-- Cockpit Glass -->
+    <path d="M-60,-40 Q-70,20 -40,60 L40,60 Q70,20 60,-40 Q0,-70 -60,-40" 
+          fill="#6422db" stroke="#8844ee" stroke-width="2" opacity="0.7" />
+    
+    <!-- Pilot Silhouette -->
+    <path d="M-30,-10 Q0,-40 30,-10 L20,30 L-20,30 Z" 
+          fill="#150426" stroke="#310e68" stroke-width="1" />
+    
+    <!-- Control Panels -->
+    <rect x="-50" y="20" width="100" height="15" rx="5" fill="#4e0250" stroke="#8844ee" stroke-width="1" />
+    <rect x="-40" y="40" width="80" height="10" rx="3" fill="#4e0250" stroke="#8844ee" stroke-width="1" />
+  </g>
+  
+  <!-- Mecha Frame -->
+  <g>
+    <!-- Shoulders -->
+    <path d="M130,230 L100,260 L110,290 L150,280" 
+          fill="#4b006e" stroke="#8844ee" stroke-width="2" />
+    <path d="M370,230 L400,260 L390,290 L350,280" 
+          fill="#4b006e" stroke="#8844ee" stroke-width="2" />
+    
+    <!-- Arms -->
+    <path d="M150,280 Q130,320 120,350" 
+          fill="none" stroke="#8844ee" stroke-width="3" stroke-linecap="round" />
+    <path d="M350,280 Q370,320 380,350" 
+          fill="none" stroke="#8844ee" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Hands/Controls -->
+    <circle cx="120" cy="350" r="15" fill="#4b006e" stroke="#8844ee" stroke-width="2" />
+    <circle cx="380" cy="350" r="15" fill="#4b006e" stroke="#8844ee" stroke-width="2" />
+  </g>
+  
+  <!-- Glowing Elements -->
+  <g>
+    <!-- Cockpit Highlights -->
+    <path d="M180,190 Q250,170 320,190" 
+          fill="none" stroke="#b700ff" stroke-width="2" opacity="0.8" />
+    
+    <!-- Energy Lines -->
+    <line x1="180" y1="240" x2="200" y2="240" stroke="#d26bff" stroke-width="2" stroke-linecap="round" />
+    <line x1="300" y1="240" x2="320" y2="240" stroke="#d26bff" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Power Sources -->
+    <circle cx="150" cy="260" r="6" fill="#d26bff" />
+    <circle cx="350" cy="260" r="6" fill="#d26bff" />
+  </g>
+  
+  <!-- Tech Particle Effects -->
+  <g fill="#d26bff" opacity="0.7">
+    <circle cx="160" cy="160" r="2" />
+    <circle cx="340" cy="160" r="2" />
+    <circle cx="160" cy="340" r="2" />
+    <circle cx="340" cy="340" r="2" />
+    <circle cx="250" cy="120" r="3" />
+    <circle cx="250" cy="380" r="3" />
+    <circle cx="120" cy="250" r="3" />
+    <circle cx="380" cy="250" r="3" />
+  </g>
+  
+  <!-- Data Stream -->
+  <g fill="none" stroke="#d26bff" stroke-width="1" opacity="0.5">
+    <path d="M200,150 Q230,170 260,150" />
+    <path d="M240,150 Q270,170 300,150" />
+    <path d="M220,370 Q250,350 280,370" />
+    <path d="M120,200 Q100,230 120,260" />
+    <path d="M380,200 Q400,230 380,260" />
+  </g>
+  
+  <!-- Hidden K in Control Panel Geometry -->
+  <path d="M235,250 L235,270 M235,260 L255,250 M235,260 L255,270" 
+        stroke="#f6f6f6" stroke-width="1.5" opacity="0.9" />
+</svg>

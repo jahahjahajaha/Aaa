@@ -5,20 +5,29 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Count SVG files in new_pfp folder
+    # Count regular SVG files in new_pfp folder (pfp1.svg, pfp2.svg, etc.)
     svg_count = 0
     if os.path.exists('new_pfp'):
-        svg_count = len([f for f in os.listdir('new_pfp') if f.endswith('.svg')])
+        svg_count = len([f for f in os.listdir('new_pfp') if f.startswith('pfp') and f.endswith('.svg')])
     
     # Count PNG files in png_pfp folder
     png_count = 0
     if os.path.exists('png_pfp'):
-        png_count = len([f for f in os.listdir('png_pfp') if f.endswith('.png')])
+        png_count = len([f for f in os.listdir('png_pfp') if f.startswith('pfp') and f.endswith('.png')])
     
-    # Add the improved PFP
+    # Check for the improved PFP
     has_improved = os.path.exists('improved_pfp.svg')
     
-    return render_template('preview.html', svg_count=svg_count, png_count=png_count, has_improved=has_improved)
+    # Get character-based designs
+    character_designs = []
+    if os.path.exists('new_pfp'):
+        character_designs = [f for f in os.listdir('new_pfp') if f.startswith('gamer_char') and f.endswith('.svg')]
+    
+    return render_template('preview.html', 
+                           svg_count=svg_count, 
+                           png_count=png_count, 
+                           has_improved=has_improved,
+                           character_designs=character_designs)
 
 @app.route('/svg/<filename>')
 def serve_svg(filename):
@@ -31,6 +40,14 @@ def serve_png(filename):
 @app.route('/improved_pfp.svg')
 def serve_improved_pfp():
     return send_file('improved_pfp.svg')
+
+@app.route('/character/<filename>')
+def serve_character_svg(filename):
+    return send_from_directory('new_pfp', filename)
+
+@app.route('/character_png/<filename>')
+def serve_character_png(filename):
+    return send_from_directory('png_pfp', filename)
 
 if __name__ == '__main__':
     # Create templates directory if it doesn't exist
@@ -147,6 +164,21 @@ if __name__ == '__main__':
             </div>
         </div>
         {% endif %}
+        
+        <div class="format-section">
+            <h2>Character-based Designs</h2>
+            <div class="gallery">
+                {% for svg_file in character_designs %}
+                <div class="pfp-card">
+                    <img src="/character/{{ svg_file }}" alt="{{ svg_file | replace('.svg', '') }}">
+                    <h3>{{ svg_file | replace('.svg', '') | replace('gamer_char_pfp', 'Character ') }}</h3>
+                    <p>Character-based design with gaming theme</p>
+                    <a href="/character/{{ svg_file }}" download class="download-btn">Download SVG</a>
+                    <a href="/character_png/{{ svg_file | replace('.svg', '.png') }}" download class="download-btn" style="background-color: #03dac6; margin-left: 5px;">PNG</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </body>
 </html>''')
